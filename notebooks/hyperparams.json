@@ -1,0 +1,16 @@
+{
+    "model_name_or_path": "roberta-base",
+    "task_name": "Rec",
+    "do_train": true,
+    "do_eval": true,
+    "do_predict": true,
+    "save_steps": 2000,
+    "item_reviews_file": "../data/item_review.tsv", 
+    "user_reviews_file": "../data/user_review.tsv", 
+    "data_dir": "../data",
+    "max_seq_length": 128,
+    "per_device_train_batch_size": 32, 
+    "learning_rate": 2e-5, 
+    "num_train_epochs": 3.0, 
+    "output_dir": "./saved_checkpoints_data"
+}
